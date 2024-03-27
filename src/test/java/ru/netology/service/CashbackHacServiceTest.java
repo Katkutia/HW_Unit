@@ -1,16 +1,11 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
-import ru.netology.service.CashbackHackService;
-
-import static org.testng.Assert.*;
-
-public class CashbackHackServiceTest {
+public class CashbackHacServiceTest {
 
 
     @org.testng.annotations.Test
     public void testRemain() {
-        CashbackHackService service = new CashbackHackService();
+        CashbackHacService service = new CashbackHacService();
         int amount = 1000;
         int actual = service.remain(amount);
         int expected = 0;
@@ -24,7 +19,7 @@ public class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
     public void testRemainWitCashback() {
-        CashbackHackService service = new CashbackHackService();
+        CashbackHacService service = new CashbackHacService();
         int amount = 900;
         int actual = service.remain(amount);
         int expected = 100;
@@ -34,7 +29,7 @@ public class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
     public void testRemainCashbackMin() {
-        CashbackHackService service = new CashbackHackService();
+        CashbackHacService service = new CashbackHacService();
         int amount = 0;
         int actual = service.remain(amount);
         int expected = 1000;
